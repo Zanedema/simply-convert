@@ -164,6 +164,6 @@ root.mainloop()  # go forever
 
 # to create exe
 # navigate to pyinstaller.exe directory in cmd.exe
-# pyinstaller -–onefile -–windowed --icon="images\myicon.ico" c:blahblah\myApp.py 
+# pyinstaller -–onefile -–windowed c:blahblah\myApp.py
 # icon if you want otherwise delete that.  
 # The file will appear in dist folder in same folder as pyinstaller.exe
