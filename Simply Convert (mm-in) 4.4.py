@@ -105,7 +105,7 @@ invar.trace('w', btnClickFunction_inch)  # watches for changes in the mm entry f
 in_out_label = tk.Label(root, textvariable=in_out_var, font=('arial', 10, 'normal'), bg="#212326", fg="#99a1ad").place(x=270, y=50)
 # inch_input.focus_set() # sets the cursor active in the inch entry box when the app is opened
 
-inch_spin = tk.Spinbox(root, from_=0, textvariable=inprec, to=13, width=3, bg="#3e4247", fg="#99a1ad", bd=0)
+inch_spin = tk.Spinbox(root, from_=1, textvariable=inprec, to=13, width=3, bg="#3e4247", fg="#99a1ad", buttonbackground="#3e4247", bd=0)
 inprec.trace('w', btnClickFunction_inch)  # watches for changes in the precision entry field
 inch_spin.place(x=160, y=75)
 inch_spin_lbl = tk.Label(root, text='Precision', font=('arial', 10, 'normal'), bg="#212326", fg="#99a1ad").place(x=195, y=71)
@@ -124,7 +124,7 @@ clip_lbl2 = tk.Label(root, text='Clipboard Output: ', font=('arial', 10, 'normal
 mmvar.trace('w', btnClickFunction_mm)  # watches for changes in the mm entry field
 mm_out_label = tk.Label(root, textvariable=mm_out_var, font=('arial', 10, 'normal'), bg="#212326", fg="#99a1ad").place(x=270, y=165)
 
-mm_spin = tk.Spinbox(root, from_=0, textvariable=mmprec, to=13, width=3, bg="#3e4247", fg="#99a1ad", bd=0)  # spinbox
+mm_spin = tk.Spinbox(root, from_=1, textvariable=mmprec, to=13, width=3, bg="#3e4247", fg="#99a1ad", buttonbackground="#3e4247", bd=0)  # spinbox
 #mmprec.trace('w', btnClickFunction_mm)  # watches for changes in the precision entry field
 mmprec.trace('w', btnClickFunction_mm)  # watches for changes in the precision entry field
 mm_spin.place(x=160, y=190)
